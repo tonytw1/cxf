@@ -1,0 +1,6 @@
+Minimal CXF/RS example.
+
+mvn clean install
+mvn tomcat7:run
+
+curl http://localhost:9050/place

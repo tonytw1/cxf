@@ -27,6 +27,7 @@
         </jaxrs:serviceBeans>
         <jaxrs:providers>
    			<bean class="org.codehaus.jackson.jaxrs.JacksonJsonProvider"/>
+   			<bean class="uk.co.eelpieconsulting.spike.cxf.JsonExceptionMapper"/>   			
 		</jaxrs:providers>
    </jaxrs:server>
       

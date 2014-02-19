@@ -1,12 +1,12 @@
 package uk.co.eelpieconsulting.spike.cxf;
 
-import org.glassfish.jersey.server.ResourceConfig;
+import com.sun.jersey.api.core.PackagesResourceConfig;
 
-public class MyApplication extends ResourceConfig {
+public class MyApplication extends PackagesResourceConfig {
 
 	public MyApplication() {
+		super("uk.co.eelpieconsulting");		
 		System.out.println("Registering jersey components");
-		register(PlacesService.class);
 	}
 	
 }
